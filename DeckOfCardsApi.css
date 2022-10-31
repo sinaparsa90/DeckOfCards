@@ -1,0 +1,18 @@
+.content{
+ display: flex;
+ flex-direction: column;
+}
+
+.Image-content{
+   margin-top: 50px;
+position: relative;
+width: 250px;
+height: 350px;
+}
+
+.imgCards{
+    margin: auto;
+    position: absolute;
+    
+    
+}
