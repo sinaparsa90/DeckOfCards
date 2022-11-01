@@ -31,6 +31,7 @@ useEffect(()=>{
         const res= await axios.get(Api_url)
         console.log(res.data)
         setDeckId(res.data.deck_id)
+        setAddCard([])
     }
 
 
@@ -71,7 +72,7 @@ useEffect(()=>{
             <div className="Image-content">
                
             {addCard.map((c,i) => 
-            <img style={{rotate:`${c.pos}deg`,right:`${c.pos}px`,up:`${c.pos}px`}} className="imgCards"  src={c.image} />
+            <img style={{transform:`translate(${c.pos}px,${c.pos}px) rotate(${c.pos}deg)`}} className="imgCards"  src={c.image} />
           
             
             )}
